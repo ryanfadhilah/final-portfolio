@@ -4,9 +4,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display, Mulish } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
 const playFair = Playfair_Display({ subsets: ["latin"] });
-const mulish = Mulish({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,13 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={
-          // inter.className
-          playFair.className
-          // mulish.className
-        }
-      >
+      <body className={playFair.className}>
         <Navbar></Navbar>
         <div className="max-w-5xl mx-auto mt-32">{children}</div>
       </body>

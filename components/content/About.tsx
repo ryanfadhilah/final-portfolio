@@ -24,9 +24,9 @@ export default function About({}: Props) {
         text-3xl mx-5 mt-20 
       md:mx-0 md:w-5/6"
       >
-        Graduate (Dec 22) of Information System majoring in Business Information
-        Technology at Bina Nusantara University with a Professional Certificate
-        of SAP Technology Consultant and Google Data Analytics.
+        Graduate at December 2022 of Information System majoring in Business
+        Information Technology at Bina Nusantara University with a Professional
+        Certificate of Front-End developer at Meta.
       </motion.section>
 
       {/* Focus */}
@@ -34,11 +34,13 @@ export default function About({}: Props) {
         initial={{ x: -50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
-        className="text-1xl font-medium mx-5
+        className="text-xl text-gray-700 font-medium mx-5
       md:mx-0 pt-10 md:w-5/6"
       >
         With around two years of working experience, I have decided to fully
-        commit on becoming a Full-Stack that Specialized on Front-End
+        commit on becoming a <b className="font-bold text-black">Full-Stack</b>{" "}
+        Developer that Specialized on{" "}
+        <b className="font-bold text-black">Front-End</b>.
       </motion.section>
 
       {/* General Knowledge */}

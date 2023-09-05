@@ -6,21 +6,18 @@ type Props = {};
 export default function About({}: Props) {
   return (
     <div>
-      <motion.h1
-        initial={{ x: -100 }}
-        whileInView={{ x: 0 }}
-        transition={{ duration: 1 }}
-        className="text-5xl underline underline-offset-8
+      <h1
+        className="text-7xl underline underline-offset-8 
       mx-5
       md:mx-0
       "
       >
         About Me
-      </motion.h1>
+      </h1>
 
       {/* Graduate */}
       <motion.section
-        initial={{ x: -100 }}
+        initial={{ x: -50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         className=" font-medium 
@@ -34,7 +31,7 @@ export default function About({}: Props) {
 
       {/* Focus */}
       <motion.section
-        initial={{ x: -100 }}
+        initial={{ x: -50 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         className="text-1xl font-medium mx-5
@@ -46,11 +43,12 @@ export default function About({}: Props) {
 
       {/* General Knowledge */}
       <section
-        className=" 
-        mt-20 mx-5"
+        className="
+        mx-5 mt-20 
+        mx:mx-0 "
       >
         <motion.h1
-          initial={{ x: -100, opacity: 0.5 }}
+          initial={{ x: -50, opacity: 0.5 }}
           transition={{ duration: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
           className="flex items-start text-5xl gap-3 relative"
@@ -65,86 +63,88 @@ export default function About({}: Props) {
 
           {/* <AiFillLinkedin className="text-yellow-500 text-2xl"></AiFillLinkedin> */}
         </motion.h1>
-        <ul className="flex flex-col gap-5 pt-10 text-xl">
+
+        <ul className="flex flex-col gap-5 pt-10 text-xl ">
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             UI/UX
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             UML Diagram
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             Programming
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             Data Analytic
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             Project Management
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           ></motion.li>
         </ul>
       </section>
 
+      {/* Work Experience */}
       <section
         className=" 
         mt-20 mx-5"
       >
         <motion.h1
-          initial={{ x: -100, opacity: 0.5 }}
+          initial={{ x: -50, opacity: 0.5 }}
           transition={{ duration: 1 }}
           whileInView={{ x: 0, opacity: 1 }}
           className="flex items-start text-5xl gap-3 relative"
@@ -161,79 +161,79 @@ export default function About({}: Props) {
         </motion.h1>
         <ul className="flex flex-col gap-5 pt-10 text-xl">
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             <p className="font-semibold">PricewaterhouseCoopers Indonesia</p>
             <p>Consultant Asistance</p>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             <p className="font-semibold">PricewaterhouseCoopers Indonesia</p>
             <p>Website Asistance</p>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             <p className="font-semibold">Suntory Garuda Beverage</p>
             <p>IT SUPPORT</p>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             <p className="font-semibold">Nature-E</p>
             <p>GRAPHIC DESIGNER</p>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           >
             <p className="font-semibold">Bina Nusantara University</p>
             <p>GRAPHIC DESIGNER</p>
           </motion.li>
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
           <motion.li
-            initial={{ scale: 0.9, opacity: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            whileInView={{ scale: 1, opacity: 1 }}
           ></motion.li>
         </ul>
       </section>

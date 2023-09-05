@@ -1,5 +1,7 @@
 import About from "@/components/content/About";
+import Contact from "@/components/content/Contact";
 import Intro from "@/components/content/Intro";
+import Portfolio from "@/components/content/Portfolio";
 
 export default function Home() {
   return (
@@ -10,6 +12,13 @@ export default function Home() {
 
       <section>
         <About></About>
+      </section>
+
+      <section>
+        <Portfolio></Portfolio>
+      </section>
+      <section>
+        <Contact></Contact>
       </section>
     </main>
   );

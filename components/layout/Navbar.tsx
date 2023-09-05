@@ -8,7 +8,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className=" fixed backdrop-blur-sm top-0 z-30 flex w-full items-center justify-end md:justify-center  px-3 py-5 tracking-[2px] text-black bg-white/5 text-sm">
+    <nav className=" fixed backdrop-blur-sm top-0 z-30 flex w-full items-center justify-end md:justify-center  px-3 py-5 tracking-[2px] text-black bg-white/70 text-sm">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

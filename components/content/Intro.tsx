@@ -16,6 +16,7 @@ export default function Intro({}: Props) {
       flex-col gap-10
       md:flex-row md:gap-5"
     >
+      {/* Profile */}
       <div
         className="flex flex-col gap-5
       items-center
@@ -23,7 +24,7 @@ export default function Intro({}: Props) {
       >
         <motion.h1
           initial={{ y: -300 }}
-          animate={{ y: 0 }}
+          whileInView={{ y: 0 }}
           transition={{ duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] }}
           className="font-bold
         text-4xl 
@@ -34,28 +35,23 @@ export default function Intro({}: Props) {
 
         <motion.p
           initial={{ y: -200 }}
-          animate={{ y: 0 }}
+          whileInView={{ y: 0 }}
           transition={{ duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] }}
           className="text-2xl font-medium"
         >
           Front-End, Indonesia
         </motion.p>
 
-        <motion.div
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] }}
-          className="pt-5"
-        >
+        <div className="pt-5">
           <Link href={"/about"} className="bg-black text-white py-4 px-7">
             About Me
           </Link>
-        </motion.div>
+        </div>
       </div>
 
       <motion.div
         initial={{ scale: 0.5 }}
-        animate={{ scale: 1 }}
+        whileInView={{ scale: 1 }}
         transition={{ duration: 1.5, ease: [0.6, 0.01, -0.05, 0.9] }}
         className="flex items-center justify-center bg-black 
         px-5 py-10

@@ -168,8 +168,9 @@ export default function About({}: Props) {
             transition={{ duration: 1 }}
           >
             <p className="font-semibold">PricewaterhouseCoopers Indonesia</p>
-            <p>Consultant Asistance</p>
+            <p>Marketing & Communications (Website)</p>
           </motion.li>
+
           <motion.li
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -181,8 +182,8 @@ export default function About({}: Props) {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <p className="font-semibold">PricewaterhouseCoopers Indonesia</p>
-            <p>Website Asistance</p>
+            <p className="font-semibold">Transindo Primatama</p>
+            <p>Finance</p>
           </motion.li>
           <motion.li
             initial={{ opacity: 0 }}
@@ -190,53 +191,79 @@ export default function About({}: Props) {
             transition={{ duration: 1 }}
             className="h-[2px] w-full bg-teal-950"
           />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">Suntory Garuda Beverage</p>
-            <p>IT SUPPORT</p>
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">Nature-E</p>
-            <p>GRAPHIC DESIGNER</p>
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">Bina Nusantara University</p>
-            <p>GRAPHIC DESIGNER</p>
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
-          />
+
           <motion.li
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           ></motion.li>
+        </ul>
+      </section>
+
+      {/* Organization Experience */}
+      <section
+        className=" 
+        mt-20 mx-5"
+      >
+        <motion.h1
+          initial={{ x: -50, opacity: 0.5 }}
+          transition={{ duration: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          className="flex items-start text-5xl gap-3 relative"
+        >
+          <span>Organization Experience</span>
+          <motion.span
+            initial={{ x: -50, opacity: 0.5 }}
+            transition={{ duration: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
+          ></motion.span>
+        </motion.h1>
+        <ul className="flex flex-col gap-5 pt-10 text-xl">
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <p className="font-semibold">Teach for Indonesia</p>
+            <p>Project Manager</p>
+          </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="h-[2px] w-full bg-teal-950"
+          />
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <p className="font-semibold">Teach for Indonesia</p>
+            <p>Staff of Creative Design</p>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="h-[2px] w-full bg-teal-950"
+          />
+
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <p className="font-semibold">HIMSISFO</p>
+            <p>Staff of Public Relation</p>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="h-[2px] w-full bg-teal-950"
+          />
         </ul>
       </section>
     </div>

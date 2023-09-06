@@ -24,11 +24,13 @@ const Navbar = (props: Props) => {
         <Link href="/portfolio" className="custom-hover hover:text-black">
           Portfolio
         </Link>
-        {/* <Link href="/learn" className="custom-hover hover:text-black">
-          How I learn ?
-        </Link> */}
+
         <Link href="/contact" className="custom-hover hover:text-black">
           Contact
+        </Link>
+
+        <Link href="/learning" className="custom-hover hover:text-black">
+          ✨
         </Link>
       </motion.div>
       <MobileNav></MobileNav>

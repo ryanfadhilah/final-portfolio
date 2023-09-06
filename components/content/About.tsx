@@ -78,7 +78,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
           <motion.li
             initial={{ opacity: 0 }}
@@ -91,7 +91,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
           <motion.li
             initial={{ opacity: 0 }}
@@ -104,7 +104,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
           <motion.li
             initial={{ opacity: 0 }}
@@ -117,7 +117,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
           <motion.li
             initial={{ opacity: 0 }}
@@ -130,13 +130,8 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          ></motion.li>
         </ul>
       </section>
 
@@ -175,7 +170,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
           <motion.li
             initial={{ opacity: 0 }}
@@ -189,14 +184,8 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
-
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          ></motion.li>
         </ul>
       </section>
 
@@ -233,7 +222,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
           <motion.li
             initial={{ opacity: 0 }}
@@ -247,7 +236,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
 
           <motion.li
@@ -262,7 +251,7 @@ export default function About({}: Props) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="h-[2px] w-full bg-teal-950"
+            className="h-[1px] w-full bg-gray-400"
           />
         </ul>
       </section>

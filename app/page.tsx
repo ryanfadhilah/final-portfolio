@@ -5,19 +5,20 @@ import Portfolio from "@/components/content/Portfolio";
 
 export default function Home() {
   return (
-    <main className=" flex flex-col gap-40">
-      <section id="intro">
+    <main className=" flex flex-col">
+      <section id="intro" className="">
         <Intro></Intro>
       </section>
 
-      <section>
+      <section id="about" className="pt-40">
         <About></About>
       </section>
 
-      <section>
+      <section id="portfolio" className="pt-40">
         <Portfolio></Portfolio>
       </section>
-      <section>
+
+      <section id="contact" className="pt-40">
         <Contact></Contact>
       </section>
     </main>

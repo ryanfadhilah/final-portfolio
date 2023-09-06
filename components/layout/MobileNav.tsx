@@ -24,8 +24,9 @@ export default function MobileNav({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" flex md:hidden text-white font-medium">
+    <nav className=" flex justify-between md:hidden text-white font-medium">
       {/* Nav */}
+
       <div
         onClick={() => setIsOpen(!isOpen)}
         className="text-3xl cursor-pointer text-black"
@@ -38,8 +39,7 @@ export default function MobileNav({}: Props) {
         variants={variants}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
-        className=" bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col
-        // bg-gray-100/90 backdrop-blur-3xl
+        className=" bg-white/95 shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 flex flex-col 
         "
       >
         <span
@@ -55,16 +55,16 @@ export default function MobileNav({}: Props) {
           >
             Home
           </Link>
-          <Link href="/about" className="custom-hover hover:text-black">
+          <Link href="#about" className="custom-hover hover:text-black">
             About
           </Link>
-          <Link href="/portfolio" className="custom-hover hover:text-black">
+          <Link href="#portfolio" className="custom-hover hover:text-black">
             Portfolio
           </Link>
           {/* <Link href="/learn" className="custom-hover hover:text-black">
             How I learn ?
           </Link> */}
-          <Link href="/contact" className="custom-hover hover:text-black">
+          <Link href="#contact" className="custom-hover hover:text-black">
             Collaborate
           </Link>
         </ul>

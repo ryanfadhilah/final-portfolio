@@ -18,18 +18,18 @@ const Navbar = (props: Props) => {
         <Link href="/" className="custom-hover hover:text-black">
           Home
         </Link>
-        <Link href="/about" className="custom-hover hover:text-black">
+        <Link href="#about" className="custom-hover hover:text-black">
           About
         </Link>
-        <Link href="/portfolio" className="custom-hover hover:text-black">
+        <Link href="#portfolio" className="custom-hover hover:text-black">
           Portfolio
         </Link>
 
-        <Link href="/contact" className="custom-hover hover:text-black">
+        <Link href="#contact" className="custom-hover hover:text-black">
           Contact
         </Link>
 
-        <Link href="/learning" className="custom-hover hover:text-black">
+        <Link href="#learning" className="custom-hover hover:text-black">
           ✨
         </Link>
       </motion.div>

@@ -23,10 +23,14 @@ export default function Contact({}: Props) {
         mx-5 py-5
         md:mx-0"
         >
-          <span className="flex items-center gap-5">
-            <h1 className="text-5xl font-semibold">Fast</h1>
-            <BsLinkedin className="text-xl"></BsLinkedin>
-          </span>
+          <a
+            href="https://www.linkedin.com/in/ryan-fadhilah-03146918a/"
+            target="_blank"
+            className="flex items-center gap-5"
+          >
+            <BsLinkedin className="text-3xl"></BsLinkedin>
+            <span className="md:hidden text-2xl ">Fast Response</span>
+          </a>
         </span>
 
         {/* Black */}
@@ -43,7 +47,16 @@ export default function Contact({}: Props) {
           md:h-96"
         >
           <span className="flex items-center gap-2 ">
-            <h1 className="text-5xl ">E-mail</h1>
+            <motion.a
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 2 }}
+              href="https://www.linkedin.com/in/ryan-fadhilah-03146918a/"
+              target="_blank"
+              className="text-xl "
+            >
+              ryan.fadhilah.acc@gmail.com
+            </motion.a>
             {/* <FcGoogle className="text-xl"></FcGoogle> */}
           </span>
         </motion.span>

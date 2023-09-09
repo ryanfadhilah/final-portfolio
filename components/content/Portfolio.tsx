@@ -16,6 +16,51 @@ export default function Portfolio({}: Props) {
         Portfolio
       </h1>
 
+      {/* React Hooks */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="group
+      mx-5 mt-20
+      md:mx-0"
+      >
+        <h1 className="text-5xl">React-Hooks</h1>
+        <div
+          className="flex mt-10
+        flex-col gap-5
+        md:flex-row-reverse"
+        >
+          <span
+            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
+          w-full
+          md:w-1/2"
+          >
+            <Image
+              src={"/next.png"}
+              alt="foto"
+              width={500}
+              height={500}
+            ></Image>
+          </span>
+          <span
+            className=" flex flex-col gap-5 
+          w-full 
+          md:w-1/2"
+          >
+            <h2>
+              Next.js is built on top of React. Understanding hooks is essential
+              for effective component development and state management. React
+              hooks such as useState, useEffect, and useTransition allow
+              developer to manage component state and side effects such as
+              loading state, dark mode and many more.
+            </h2>
+            <h3 className="text-2xl">Stack</h3>
+            <p>Icons - Icons - Icons</p>
+          </span>
+        </div>
+      </motion.section>
+
       {/* Todo List */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -27,12 +72,12 @@ export default function Portfolio({}: Props) {
       >
         <h1 className="text-5xl">Todo-List</h1>
         <div
-          className="flex mt-10
+          className="flex mt-10 group
         flex-col gap-5
         md:flex-row-reverse"
         >
           <span
-            className="bg-black 
+            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -49,9 +94,9 @@ export default function Portfolio({}: Props) {
           md:w-1/2"
           >
             <h2>
-              Todo List is our first app in every framework, it is commonly used
-              as a method to introduce how a CRUD operations being implement in
-              certain framework
+              Todo List is developer first app in every framework, it is
+              commonly used as a method to introduce how a CRUD operations being
+              implement in certain framework.
             </h2>
             <h3 className="text-2xl">Stack</h3>
             <p>Icons - Icons - Icons</p>
@@ -70,12 +115,12 @@ export default function Portfolio({}: Props) {
       >
         <h1 className="text-5xl">Simple-Blog</h1>
         <div
-          className="flex mt-10
+          className="flex mt-10 group
         flex-col gap-5
         md:flex-row-reverse"
         >
           <span
-            className="bg-black 
+            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -87,7 +132,7 @@ export default function Portfolio({}: Props) {
             ></Image>
           </span>
           <span
-            className=" flex flex-col gap-5
+            className=" flex flex-col gap-5 
           w-full 
           md:w-1/2"
           >
@@ -114,12 +159,12 @@ export default function Portfolio({}: Props) {
       >
         <h1 className="text-5xl">E-commerce</h1>
         <div
-          className="flex mt-10
+          className="flex mt-10 group
         flex-col gap-5
         md:flex-row-reverse"
         >
           <span
-            className="bg-black 
+            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -157,12 +202,12 @@ export default function Portfolio({}: Props) {
       >
         <h1 className="text-5xl">Social-Media</h1>
         <div
-          className="flex mt-10
+          className="flex mt-10 group
         flex-col gap-5
         md:flex-row-reverse"
         >
           <span
-            className="bg-black 
+            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >

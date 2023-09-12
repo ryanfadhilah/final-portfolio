@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { SiGraphql, SiMongodb, SiNextdotjs, SiPrisma } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
 
 type Props = {};
 
@@ -31,8 +33,10 @@ export default function Portfolio({}: Props) {
         flex-col gap-5
         md:flex-row-reverse"
         >
-          <span
-            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
+          <a
+            href="https://hooks-next-ryanfadhilahacc-gmailcom.vercel.app/"
+            target="_blank"
+            className="bg-black shadow-lg hover:shadow-black/80 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -42,7 +46,7 @@ export default function Portfolio({}: Props) {
               width={500}
               height={500}
             ></Image>
-          </span>
+          </a>
           <span
             className=" flex flex-col gap-5 
           w-full 
@@ -56,7 +60,20 @@ export default function Portfolio({}: Props) {
               loading state, dark mode and many more.
             </h2>
             <h3 className="text-2xl">Stack</h3>
-            <p>Icons - Icons - Icons</p>
+            <p className="flex gap-3">
+              <SiNextdotjs></SiNextdotjs>
+              <FaReact></FaReact>
+            </p>
+
+            <span className="flex">
+              <a
+                href="https://hooks-next-ryanfadhilahacc-gmailcom.vercel.app/"
+                target="_blank"
+                className="px-7 py-3 bg-black text-white flex hover:bg-black/70 transition-all ease-out duration-300"
+              >
+                Visit
+              </a>
+            </span>
           </span>
         </div>
       </motion.section>
@@ -76,8 +93,10 @@ export default function Portfolio({}: Props) {
         flex-col gap-5
         md:flex-row-reverse"
         >
-          <span
-            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
+          <a
+            href="https://next-todo-ryanfadhilahacc-gmailcom.vercel.app/"
+            target="_blank"
+            className="bg-black shadow-lg hover:shadow-black/80 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -87,7 +106,7 @@ export default function Portfolio({}: Props) {
               width={500}
               height={500}
             ></Image>
-          </span>
+          </a>
           <span
             className=" flex flex-col gap-5
           w-full 
@@ -99,7 +118,21 @@ export default function Portfolio({}: Props) {
               implement in certain framework.
             </h2>
             <h3 className="text-2xl">Stack</h3>
-            <p>Icons - Icons - Icons</p>
+            <p className="flex gap-3">
+              <SiNextdotjs></SiNextdotjs>
+              <FaReact></FaReact>
+              <SiMongodb></SiMongodb>
+              <SiPrisma></SiPrisma>
+            </p>
+            <span className="flex">
+              <a
+                href="hhttps://next-todo-ryanfadhilahacc-gmailcom.vercel.app/"
+                target="_blank"
+                className="px-7 py-3 bg-black text-white flex hover:bg-black/70 transition-all ease-out duration-300"
+              >
+                Visit
+              </a>
+            </span>
           </span>
         </div>
       </motion.section>
@@ -119,8 +152,10 @@ export default function Portfolio({}: Props) {
         flex-col gap-5
         md:flex-row-reverse"
         >
-          <span
-            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
+          <a
+            href="https://next-blog-grafbase-ryanfadhilahacc-gmailcom.vercel.app/"
+            target="_blank"
+            className="bg-black shadow-lg hover:shadow-black/90 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -130,7 +165,7 @@ export default function Portfolio({}: Props) {
               width={500}
               height={500}
             ></Image>
-          </span>
+          </a>
           <span
             className=" flex flex-col gap-5 
           w-full 
@@ -143,7 +178,20 @@ export default function Portfolio({}: Props) {
               metadata, and more complex database.
             </h2>
             <h3 className="text-2xl">Stack</h3>
-            <p>Icons - Icons - Icons</p>
+            <p className="flex gap-3">
+              <SiNextdotjs></SiNextdotjs>
+              <FaReact></FaReact>
+              <SiGraphql></SiGraphql>
+            </p>
+            <span className="flex">
+              <a
+                href="https://next-blog-grafbase-ryanfadhilahacc-gmailcom.vercel.app/"
+                target="_blank"
+                className="px-7 py-3 bg-black text-white flex hover:bg-black/70 transition-all ease-out duration-300"
+              >
+                Visit
+              </a>
+            </span>
           </span>
         </div>
       </motion.section>
@@ -163,8 +211,10 @@ export default function Portfolio({}: Props) {
         flex-col gap-5
         md:flex-row-reverse"
         >
-          <span
-            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
+          <a
+            href="https://tokopedia-lite-ryanfadhilahacc-gmailcom.vercel.app/"
+            target="_blank"
+            className="bg-black shadow-lg hover:shadow-black/80 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -174,7 +224,7 @@ export default function Portfolio({}: Props) {
               width={500}
               height={500}
             ></Image>
-          </span>
+          </a>
           <span
             className=" flex flex-col gap-5
           w-full 
@@ -186,7 +236,21 @@ export default function Portfolio({}: Props) {
               database once the user finally logged in / create their account.
             </h2>
             <h3 className="text-2xl">Stack</h3>
-            <p>Icons - Icons - Icons</p>
+            <p className="flex gap-3">
+              <SiNextdotjs></SiNextdotjs>
+              <FaReact></FaReact>
+              <SiMongodb></SiMongodb>
+              <SiPrisma></SiPrisma>
+            </p>
+            <span className="flex">
+              <a
+                href="https://tokopedia-lite-ryanfadhilahacc-gmailcom.vercel.app/"
+                target="_blank"
+                className="px-7 py-3 bg-black text-white flex hover:bg-black/70 transition-all ease-out duration-300"
+              >
+                Visit
+              </a>
+            </span>
           </span>
         </div>
       </motion.section>
@@ -207,7 +271,7 @@ export default function Portfolio({}: Props) {
         md:flex-row-reverse"
         >
           <span
-            className="bg-black shadow-lg group-hover:shadow-indigo-500 transition-all ease-out duration-500
+            className="bg-black shadow-lg hover:shadow-black/80 transition-all ease-out duration-500
           w-full
           md:w-1/2"
           >
@@ -230,7 +294,20 @@ export default function Portfolio({}: Props) {
               thread/tweet. This logic can be implemented using recrusion.
             </h2>
             <h3 className="text-2xl">Stack</h3>
-            <p>Icons - Icons - Icons</p>
+            <p className="flex gap-3">
+              <SiNextdotjs></SiNextdotjs>
+              <FaReact></FaReact>
+              <SiMongodb></SiMongodb>
+            </p>
+            <span className="flex">
+              <a
+                href="https://twitter-lite-ryanfadhilahacc-gmailcom.vercel.app/"
+                target="_blank"
+                className="px-7 py-3 bg-black text-white flex hover:bg-black/70 transition-all ease-out duration-300"
+              >
+                Visit
+              </a>
+            </span>
           </span>
         </div>
       </motion.section>

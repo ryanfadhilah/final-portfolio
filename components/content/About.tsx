@@ -1,4 +1,10 @@
 "use client";
+import {
+  generalKnowledge,
+  organizationExperience,
+  professionalCertificate,
+  workExperience,
+} from "@/constants";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
@@ -69,75 +75,30 @@ export default function About({}: Props) {
         </motion.h1>
 
         <ul className="flex flex-col gap-5 pt-10 text-xl ">
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            UI/UX
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            UML Diagram
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Programming
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Data Analytic
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            Project Management
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
+          {generalKnowledge.map((v, i, a) => {
+            return (
+              <>
+                {" "}
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                >
+                  {v.list}
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="h-[1px] w-full bg-gray-400"
+                />
+              </>
+            );
+          })}
         </ul>
       </section>
 
-      {/* Proffesional Certifications */}
+      {/* Profesional Certifications */}
       <section
         className="
         mx-5 mt-20 
@@ -161,87 +122,28 @@ export default function About({}: Props) {
         </motion.h1>
 
         <div className="flex flex-col gap-5 pt-10 text-xl ">
-          <a
-            target="_blank"
-            href="https://www.coursera.org/account/accomplishments/certificate/G8JVPPA68JF9"
-          >
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="hover:black hover:font-extrabold transition-all ease-in-out duration-500"
-            >
-              Introduction to Front-End Development
-            </motion.span>
-          </a>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-
-          <a
-            target="_blank"
-            href={
-              "https://www.coursera.org/account/accomplishments/certificate/XY778ZGECGG2"
-            }
-          >
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="hover:black hover:font-extrabold transition-all ease-in-out duration-500"
-            >
-              HTML and CSS in depth
-            </motion.span>
-          </a>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-
-          <a
-            target="_blank"
-            href="https://www.coursera.org/account/accomplishments/certificate/FXTUAM4X9CR8"
-          >
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="hover:black hover:font-extrabold transition-all ease-in-out duration-500"
-            >
-              Programming with Javascript
-            </motion.span>
-          </a>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-
-          <a
-            target="_blank"
-            href="https://www.coursera.org/account/accomplishments/certificate/RXHCAMWJT45V"
-          >
-            <motion.span
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="hover:black hover:font-extrabold transition-all ease-in-out duration-500"
-            >
-              Version Control
-            </motion.span>
-          </a>
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
+          {professionalCertificate.map((v, i, a) => {
+            return (
+              <>
+                <a target="_blank" href={v.link}>
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    className="hover:black hover:font-extrabold transition-all ease-in-out duration-500"
+                  >
+                    {v.list}
+                  </motion.span>
+                </a>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="h-[1px] w-full bg-gray-400"
+                />
+              </>
+            );
+          })}
         </div>
       </section>
 
@@ -263,39 +165,28 @@ export default function About({}: Props) {
             whileInView={{ x: 0, opacity: 1 }}
             className="w-[100px] h-[30px] bg-teal-700/50 backdrop-blur-[.5px] absolute "
           ></motion.span>
-
-          {/* <AiFillLinkedin className="text-yellow-500 text-2xl"></AiFillLinkedin> */}
         </motion.h1>
         <ul className="flex flex-col gap-5 pt-10 text-xl">
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">PricewaterhouseCoopers Indonesia</p>
-            <p>Marketing & Communications (Website)</p>
-          </motion.li>
-
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">Transindo Primatama</p>
-            <p>Finance</p>
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
+          {workExperience.map((v, i, a) => {
+            return (
+              <>
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                >
+                  <p className="font-semibold">{v.list}</p>
+                  <p>{v.desc}</p>
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="h-[1px] w-full bg-gray-400"
+                />
+              </>
+            );
+          })}
         </ul>
       </section>
 
@@ -319,50 +210,26 @@ export default function About({}: Props) {
           ></motion.span>
         </motion.h1>
         <ul className="flex flex-col gap-5 pt-10 text-xl">
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">Teach for Indonesia</p>
-            <p>Project Manager</p>
-          </motion.li>
-
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">Teach for Indonesia</p>
-            <p>Staff of Creative Design</p>
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
-
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <p className="font-semibold">HIMSISFO</p>
-            <p>Staff of Public Relation</p>
-          </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="h-[1px] w-full bg-gray-400"
-          />
+          {organizationExperience.map((v, i, a) => {
+            return (
+              <>
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                >
+                  <p className="font-semibold">{v.list}</p>
+                  <p>{v.desc}</p>
+                </motion.li>
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="h-[1px] w-full bg-gray-400"
+                />
+              </>
+            );
+          })}
         </ul>
       </section>
     </div>

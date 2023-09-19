@@ -51,7 +51,7 @@ export default function Contact({}: Props) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 2 }}
-              href="https://www.linkedin.com/in/ryan-fadhilah-03146918a/"
+              href="mailto:ryan.fadhilah.acc@gmail.com"
               target="_blank"
               className="text-xl "
             >

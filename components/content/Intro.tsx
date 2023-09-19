@@ -60,9 +60,13 @@ export default function Intro({}: Props) {
         </motion.p>
 
         <div className="pt-5">
-          <Link href={"/about"} className="bg-black text-white py-4 px-7">
-            About Me
-          </Link>
+          <a
+            href="/CV_Ryan.pdf"
+            download
+            className="bg-black text-white py-4 px-7 hover:bg-black/70 transition-all ease-out duration-200"
+          >
+            Curriculum Vitae
+          </a>
         </div>
       </div>
 

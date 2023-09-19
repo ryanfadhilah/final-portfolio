@@ -19,19 +19,19 @@ export const generalKnowledge = [
 export const professionalCertificate = [
   {
     list: "Introduction to Front-End Development",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/certificate/G8JVPPA68JF9",
   },
   {
     list: "HTML and CSS in Depth",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/certificate/XY778ZGECGG2",
   },
   {
     list: "Programming With Javascript",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/certificate/FXTUAM4X9CR8",
   },
   {
     list: "Version Control",
-    link: "",
+    link: "https://www.coursera.org/account/accomplishments/certificate/RXHCAMWJT45V",
   },
 ];
 

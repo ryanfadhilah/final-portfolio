@@ -29,9 +29,13 @@ const Navbar = (props: Props) => {
           Contact
         </Link>
 
-        <Link href="#learning" className="custom-hover hover:text-black">
-          ✨
-        </Link>
+        <a
+          href="/CV_Goldie.pdf"
+          download
+          className="custom-hover hover:text-black"
+        >
+          CV
+        </a>
       </motion.div>
       <MobileNav></MobileNav>
     </nav>

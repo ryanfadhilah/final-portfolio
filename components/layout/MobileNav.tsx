@@ -61,12 +61,13 @@ export default function MobileNav({}: Props) {
           <Link href="#portfolio" className="custom-hover hover:text-black">
             Portfolio
           </Link>
-          {/* <Link href="/learn" className="custom-hover hover:text-black">
-            How I learn ?
-          </Link> */}
+
           <Link href="#contact" className="custom-hover hover:text-black">
             Collaborate
           </Link>
+          <a href="/CV_Ryan.pdf" download>
+            CV
+          </a>
         </ul>
       </motion.div>
     </nav>

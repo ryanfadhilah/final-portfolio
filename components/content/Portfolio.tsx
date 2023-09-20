@@ -51,7 +51,7 @@ export default function Portfolio({}: Props) {
       md:w-1/2"
               >
                 <Image
-                  src={"/next.png"}
+                  src={`${v.image}`}
                   alt="foto"
                   width={500}
                   height={500}

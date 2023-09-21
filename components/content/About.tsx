@@ -32,7 +32,7 @@ export default function About({}: Props) {
         text-3xl mx-5 mt-20 
       md:mx-0 md:w-5/6"
       >
-        Graduate at December 2022 of Information System majoring in Business
+        Graduate at December 2022 of Computer Science majoring in Business
         Information Technology at Bina Nusantara University with a Professional
         Certificate of Front-End developer at Meta.
       </motion.section>
